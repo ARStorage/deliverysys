@@ -1,18 +1,40 @@
 # 
 
 
-##모델링
+## 모델링
 
 ![모델링](https://user-images.githubusercontent.com/85432029/226529207-6dbfffe4-e885-492a-abf3-8b9db64d6e09.png)
 
-##SAGA+Compensation/Correlation
+## SAGA+Compensation/Correlation
 
-#주문
+# 주문
 
-https://user-images.githubusercontent.com/85432029/226529232-59476872-cdc8-42b3-9ede-49834c06dac5.PNG
-#주문취소
+![01_주문](https://user-images.githubusercontent.com/85432029/226529232-59476872-cdc8-42b3-9ede-49834c06dac5.PNG)
 
-(https://user-images.githubusercontent.com/85432029/226529245-79a71502-a09a-4298-b128-45ec60b708c2.PNG)
+# 주문 취소
+
+![02_주문취소](https://user-images.githubusercontent.com/85432029/226529245-79a71502-a09a-4298-b128-45ec60b708c2.PNG)
+
+# 주문 승낙
+
+![03_주문승낙](https://user-images.githubusercontent.com/85432029/226529249-c1d3d9c2-b059-40df-8ab2-49a1142da198.PNG)
+
+# 요리 시작
+
+![04_주문시작](https://user-images.githubusercontent.com/85432029/226529253-42cf5bb3-0a01-4e85-9474-6b5593ef6340.PNG)
+
+
+## CQRS
+
+# 주문 발생
+![05_주문발생](https://user-images.githubusercontent.com/85432029/226529257-4a7149f3-db7e-40d7-8d92-7e904e87432d.PNG)
+
+# 상태 변경
+![06_상태변경](https://user-images.githubusercontent.com/85432029/226529265-d0d61ea7-6cfd-45a9-9622-56bbd1fcc771.PNG)
+
+# 마이페이지 조회
+![07_마이페이지조회](https://user-images.githubusercontent.com/85432029/226529277-f105d6d8-9c75-441f-bedd-095671dc2fab.PNG)
+
 
 ## Model
 www.msaez.io/#/storming/e86bb84b957327be1c1959cb8ad0f102
