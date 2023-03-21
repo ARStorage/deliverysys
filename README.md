@@ -2,12 +2,16 @@
 
 
 ##모델링
-https://user-images.githubusercontent.com/85432029/226529207-6dbfffe4-e885-492a-abf3-8b9db64d6e09.png
+
+![모델링](https://user-images.githubusercontent.com/85432029/226529207-6dbfffe4-e885-492a-abf3-8b9db64d6e09.png)
 
 ##SAGA+Compensation/Correlation
+
 #주문
+
 https://user-images.githubusercontent.com/85432029/226529232-59476872-cdc8-42b3-9ede-49834c06dac5.PNG
 #주문취소
+
 (https://user-images.githubusercontent.com/85432029/226529245-79a71502-a09a-4298-b128-45ec60b708c2.PNG)
 
 ## Model
