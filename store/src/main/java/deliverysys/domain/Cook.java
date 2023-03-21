@@ -7,6 +7,8 @@ import deliverysys.domain.OrderAccepted;
 import deliverysys.domain.OrderRejected;
 import java.util.Date;
 import java.util.List;
+import java.util.concurrent.atomic.LongAccumulator;
+
 import javax.persistence.*;
 import lombok.Data;
 
@@ -60,44 +62,28 @@ public class Cook {
 
     //<<< Clean Arch / Port Method
     public static void orderCreate(Paid paid) {
-        /** Example 1:  new item 
         Cook cook = new Cook();
+        cook.setAddress(paid.getAddress());
+        cook.setCustomerId(paid.getCustomerId());
+        cook.setFoodId(paid.getFoodId());
+        cook.setOrderId(String.valueOf(paid.getId()));
+        cook.setQty(paid.getQty());
+        cook.setStoreId(paid.getStoreId());
+        cook.setStatus("주문 승낙");
         repository().save(cook);
-
-        */
-
-        /** Example 2:  finding and process
-        
-        repository().findById(paid.get???()).ifPresent(cook->{
-            
-            cook // do something
-            repository().save(cook);
-
-
-         });
-        */
 
     }
 
     //>>> Clean Arch / Port Method
     //<<< Clean Arch / Port Method
     public static void orderDelete(OrderCanceled orderCanceled) {
-        /** Example 1:  new item 
-        Cook cook = new Cook();
-        repository().save(cook);
-
-        */
-
-        /** Example 2:  finding and process
-        
-        repository().findById(orderCanceled.get???()).ifPresent(cook->{
+        repository().findByOrderId(orderCanceled.getId()).ifPresent(cook->{
             
-            cook // do something
+            cook.setStatus("주문 취소");
             repository().save(cook);
 
 
          });
-        */
 
     }
     //>>> Clean Arch / Port Method

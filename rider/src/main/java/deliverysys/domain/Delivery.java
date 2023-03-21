@@ -51,22 +51,13 @@ public class Delivery {
 
     //<<< Clean Arch / Port Method
     public static void deliveryCreate(CookFinished cookFinished) {
-        /** Example 1:  new item 
         Delivery delivery = new Delivery();
+        delivery.setAddress(cookFinished.getAddress());
+        delivery.setCustomerId(cookFinished.getCustomerId());
+        delivery.setOrderId(cookFinished.getOrderId());
+        delivery.setStoreId(cookFinished.getStoreId());
+
         repository().save(delivery);
-
-        */
-
-        /** Example 2:  finding and process
-        
-        repository().findById(cookFinished.get???()).ifPresent(delivery->{
-            
-            delivery // do something
-            repository().save(delivery);
-
-
-         });
-        */
 
     }
     //>>> Clean Arch / Port Method

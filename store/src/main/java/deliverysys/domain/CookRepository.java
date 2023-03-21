@@ -6,4 +6,7 @@ import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 
 @RepositoryRestResource(collectionResourceRel = "cooks", path = "cooks")
 public interface CookRepository
-    extends PagingAndSortingRepository<Cook, Long> {}
+    extends PagingAndSortingRepository<Cook, Long> {
+
+        java.util.Optional<Cook> findByOrderId(Long id);
+    }

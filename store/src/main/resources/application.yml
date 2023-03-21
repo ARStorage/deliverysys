@@ -31,9 +31,7 @@ spring:
           destination: deliverysys
           contentType: application/json
         event-out:
-//<<< EDA / Topic Name
           destination: deliverysys
-//>>> EDA / Topic Name
           contentType: application/json
 
 logging:

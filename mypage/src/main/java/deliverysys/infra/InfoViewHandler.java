@@ -28,7 +28,7 @@ public class InfoViewHandler {
             // view 객체에 이벤트의 Value 를 set 함
             info.setOrderId(String.valueOf(ordered.getId()));
             info.setCustomerId(ordered.getCustomerId());
-            info.setStatus(주문완료);
+            info.setStatus("주문완료");
             // view 레파지 토리에 save
             infoRepository.save(info);
 
@@ -47,7 +47,7 @@ public class InfoViewHandler {
                 List<Info> infoList = infoRepository.findByOrderId(String.valueOf(orderCanceled.getId()));
                 for(Info info : infoList){
                     // view 객체에 이벤트의 eventDirectValue 를 set 함
-                    info.setStatus(주문 취소);
+                    info.setStatus("주문 취소");
                 // view 레파지 토리에 save
                 infoRepository.save(info);
                 }
@@ -65,7 +65,7 @@ public class InfoViewHandler {
                 List<Info> infoList = infoRepository.findByOrderId(String.valueOf(paid.getId()));
                 for(Info info : infoList){
                     // view 객체에 이벤트의 eventDirectValue 를 set 함
-                    info.setStatus(결제 완료);
+                    info.setStatus("결제 완료");
                 // view 레파지 토리에 save
                 infoRepository.save(info);
                 }

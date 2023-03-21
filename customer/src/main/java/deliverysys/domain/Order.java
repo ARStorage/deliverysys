@@ -33,6 +33,7 @@ public class Order {
     @PostPersist
     public void onPostPersist() {
         Ordered ordered = new Ordered(this);
+        ordered.setStatus("주문 완료");
         ordered.publishAfterCommit();
 
         Paid paid = new Paid(this);
@@ -42,6 +43,7 @@ public class Order {
     @PostUpdate
     public void onPostUpdate() {
         OrderCanceled orderCanceled = new OrderCanceled(this);
+        orderCanceled.setStatus("주문 취소");
         orderCanceled.publishAfterCommit();
     }
 
